@@ -35,10 +35,13 @@ function App() {
       <svg ref={svgRef}></svg>
       <br />
       <button onClick={()=> setData(data.map(value => value +5))}>
-        Update data
+        Increase data values
       </button>
       <button onClick={()=> setData(data.filter(value => value <= 35))}>
         Filter data
+      </button>
+      <button onClick={()=> setData(data.map(value => value -5))}>
+        Decrease data
       </button>
       
     </React.Fragment>
