@@ -1,29 +1,92 @@
 #dreamerGirl_box {
   display: flex;
   justify-content: center;
+  height: 1500px;
+  width: auto;
+  border: solid black 4px;
+  margin: 15px;
+}
+
+@keyframes dangle {
+  1% {
+    transform: rotatey(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotatey(0deg) rotateZ(15deg);
+  }
+  100% {
+    transform: rotatey(0deg) rotateZ(0deg);
+  }
+}
+
+#RightFoot {
+  /* animation: dangle 2s infinite linear; */
+  animation: dangle 2s infinite;
+
+  /* transform-origin: center; */
+  transform-box: fill-box;
+}
+
+@keyframes float {
+  20% {
+    transform: rotatey(0deg);
+  }
+  60% {
+    transform: rotatey(100deg);
+  }
+  80% {
+    transform: rotatey(0deg);
+  }
+}
+@keyframes upDown1 {
+  from {
+    transform: skewY(10deg) skewx(0deg);
+  }
+  to {
+    transform: skewY(0deg) skewX(10deg);
+  }
+}
+@keyframes upDown2 {
+  from {
+    transform: skewY(12deg) skewX(0deg);
+  }
+  to {
+    transform: skewY(0deg) skewX(12deg);
+  }
+}
+@keyframes upDown3 {
+  from {
+    transform: skewY(5deg) skewX(0deg);
+  }
+  to {
+    transform: skewY(0deg) skewX(5deg);
+  }
+}
+
+#Tree1 {
+  animation: upDown1 1.7s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Tree2 {
+  animation: upDown2 1.9s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Tree3 {
+  animation: upDown3 1.5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
 }
 
 #Cloud {
-  /* animation: bangs 1s infinite;
-   */
-  animation: pulse 5s infinite;
+  animation: float 10s infinite linear;
+  /* transform-origin: center; */
 }
-
-@keyframes bangs {
-  from {
-    transform: rotatey(0deg);
-  }
-  to {
-    transform: rotatey(5deg);
-  }
-}
-
-#Star {
-  /* animation: pulse 5s infinite; */
-}
-@keyframes pulse {
+/* //LR */
+@keyframes swoop {
   0% {
-    transform: scale(1.2);
+    transform: scale(0.99);
     box-shadow: 0 0 0 0 rgba(97, 160, 255, 0.7);
   }
   70% {
@@ -31,7 +94,7 @@
     box-shadow: 0 0 0 15px rgba(97, 160, 255, 0);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(0.99);
     box-shadow: 0 0 0 0 rgba(97, 160, 255, 0.7);
   }
 }
