@@ -1,3 +1,5 @@
+# D3.js SVG data visualization practice as well as Animating SVGs with CSS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
