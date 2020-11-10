@@ -1,5 +1,7 @@
 # D3.js SVG data visualization practice as well as Animating SVGs with CSS
 
+[![Dreamer Girl](https://img.youtube.com/vi/pQqgbt5-A_Q/0.jpg)](https://www.youtube.com/watch?v=pQqgbt5-A_Q)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
