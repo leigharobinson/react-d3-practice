@@ -99,7 +99,7 @@
 /* Here is the spaceship and beam */
 @keyframes swoop {
   0% {
-    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(0%);
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(80%);
   }
   20%,
   55% {
@@ -111,7 +111,7 @@
     transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
   }
   100% {
-    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-100%);
   }
 }
 
@@ -129,17 +129,11 @@
 }
 
 #Beam {
-  animation: beam 15s ease-in-out alternate-reverse infinite;
-}
-#Beam2 {
-  animation: beam 15s ease-in-out backwards;
+  animation: beam 15s ease-in-out alternate infinite;
 }
 
 #spaceship {
-  animation: swoop 15s ease-in-out alternate-reverse infinite;
-}
-#spaceship2 {
-  animation: swoop 15s ease-in-out backwards;
+  animation: swoop 15s ease-in-out alternate infinite;
 }
 
 @keyframes blink1 {
@@ -259,10 +253,10 @@
   0% {
     fill-opacity: 1;
   }
-  48% {
+  50% {
     fill-opacity: 1;
   }
-  49% {
+  51% {
     fill-opacity: 0;
   }
   55% {
@@ -277,10 +271,10 @@
   0% {
     fill: #c4c4c4;
   }
-  48% {
+  50% {
     fill: #c4c4c4;
   }
-  49% {
+  51% {
     fill: none;
   }
   55% {
@@ -295,11 +289,11 @@
     fill: #c4c4c4;
     fill-opacity: "0.55";
   }
-  48% {
+  50% {
     fill: #c4c4c4;
     fill-opacity: "0.55";
   }
-  49% {
+  51% {
     fill: none;
     fill-opacity: none;
   }
@@ -318,11 +312,11 @@
     fill: #808080;
     fill-opacity: "0.55";
   }
-  48% {
+  50% {
     fill: #808080;
     fill-opacity: "0.55";
   }
-  49% {
+  51% {
     fill: none;
     fill-opacity: none;
   }
@@ -342,12 +336,12 @@
     stroke: #3f3d56;
     stroke-opacity: "0.55";
   }
-  48% {
+  50% {
     fill: #c4c4c4;
     stroke: #3f3d56;
     stroke-opacity: "0.55";
   }
-  49% {
+  51% {
     fill: none;
     stroke: none;
     stroke-opacity: "0.55";
@@ -368,10 +362,10 @@
   0% {
     stroke: black;
   }
-  48% {
+  50% {
     stroke: black;
   }
-  49% {
+  51% {
     stroke: none;
   }
   55% {
@@ -387,11 +381,11 @@
     fill: #c4c4c4;
     stroke: #3f3d56;
   }
-  48% {
+  50% {
     fill: #c4c4c4;
     stroke: #3f3d56;
   }
-  49% {
+  51% {
     fill: none;
     stroke: none;
   }
@@ -423,22 +417,31 @@
   animation: disapear3 15s infinite alternate-reverse ease-in-out;
 }
 
+#EllipseHealShadowL,
+#EllipseThighShadowL,
+#EllipseHealShadowR,
+#EllipseThighShadowR,
+#EllipseArmShadowR,
+#EllipseFaceShadow,
+#EllipseEarShadow,
 #Ellipse27_2,
 #Ellipse30,
 #Ellipse27,
 #Ellipse29_2,
 #Ellipse47,
-#Ellipse49,
 #Ellipse50 {
   animation: disapear3path 15s infinite alternate-reverse ease-in-out;
 }
 
+#EllipseBodyShadow,
 #Ellipse23 {
   animation: disapear3a 15s infinite alternate-reverse ease-in-out;
 }
 
+#EllipseNoseShadows,
+#EllipseFootR path,
 #Ellipse25 path,
-#Ellipse25_2 path,
+#EllipseFootL path,
 #Star10 path,
 #Star5 path,
 #Star6 path,
@@ -449,8 +452,18 @@
   animation: disapear3c 15s infinite alternate-reverse ease-in-out;
 }
 
-#Ellipse25_2 ellipse,
-#Ellipse25 ellipse,
+#Ellipse49,
+#EllipseHealPadL,
+#EllipseHealPadR,
+#EllipseThighL,
+#EllipseThighR,
+#Tail,
+#EllipseTummy,
+#EllipseNose,
+#EllipseHead,
+#EllipseMainBody,
+#EllipseFootL ellipse,
+#EllipseFootR ellipse,
 #Ellipse28_2,
 #Ellipse22_2,
 #Ellipse28,
@@ -483,6 +496,12 @@
   animation: disapear 15s infinite alternate-reverse ease-in-out;
 }
 
+#RectangleToeL2,
+#RectangleToeL3,
+#RectangleToeL1,
+#RectangleToeR1,
+#RectangleToeR2,
+#RectangleToeR3,
 #Rectangle30_2,
 #Rectangle30_3,
 #Rectangle31_3,
