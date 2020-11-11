@@ -4,6 +4,23 @@ import "./BabyYodaTotoro.css";
 export const BabyYodaTotoro = () => {
 
 
+//display svg line of element described by function parameter
+
+
+// const bringBack = () => {
+//     var svgParent = document.getElementById(${Beam});
+//     var svgElement = document.getElementById("spaceship");
+//     svgParent.className.baseVal = 'comeBack'; //remove class "invisible"
+//     svgElement.className.baseVal = 'comeBack2'; //remove class "invisible"
+// }
+
+
+// const changeToGet = () => {
+//     const incomming = document.getElementById('Beam2')
+//     document.getElementById('spaceship2').id ='spaceship1'
+// }
+
+
 return (
     <>
         <div id="totoro_box">
@@ -16,18 +33,18 @@ return (
 <path id="Ellipse 59" d="M1174.79 905.421C1174.79 858.538 1131.2 813.575 1053.61 780.423C976.025 747.271 870.792 728.647 761.066 728.647C651.339 728.647 546.107 747.271 468.519 780.423C390.93 813.575 347.342 858.538 347.342 905.421L761.066 905.421H1174.79Z" fill="url(#paint3_linear)"/>
 <path id="Ellipse 56" d="M550.253 881.445C550.253 846.367 517.632 812.726 459.566 787.922C401.5 763.119 322.745 840.121 240.627 840.121C158.509 840.121 58.1087 815.317 0.0424881 840.121C-58.0238 864.924 -69 846.367 -69 881.445L240.627 881.445H550.253Z" fill="black" fill-opacity="0.31"/>
 <path id="Ellipse 57" d="M973.171 851.878C973.171 816.758 978.858 797.148 1023 772.315C1048.01 758.244 1094 730.049 1128.42 758.245C1208.55 851.878 1344.14 747.482 1388.28 772.315C1432.42 797.148 1443.93 816.758 1443.93 851.878L1208.55 851.878H973.171Z" fill="black" fill-opacity="0.1"/>
-<ellipse id="Ellipse 63" cx="652.376" cy="211.073" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
-<ellipse id="Ellipse 81" cx="615.257" cy="197.249" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
-<ellipse id="Ellipse 122" cx="1315.34" cy="85.7587" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
-<ellipse id="Ellipse 123" cx="1242.99" cy="120.365" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
-<ellipse id="Ellipse 126" cx="1226.85" cy="82.9044" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
-<ellipse id="Ellipse 124" rx="3.42033" ry="4.45425" transform="matrix(-0.205644 0.978627 -0.992832 -0.119521 1266.11 191.618)" fill="#ECECEC"/>
+<ellipse id="Star63" cx="652.376" cy="211.073" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
+<ellipse id="Star81" cx="615.257" cy="197.249" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
+<ellipse id="Star122" cx="1315.34" cy="85.7587" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
+<ellipse id="Star123" cx="1242.99" cy="120.365" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
+<ellipse id="Star126" cx="1226.85" cy="82.9044" rx="4.47791" ry="3.3893" fill="#ECECEC"/>
+<ellipse id="Star124" rx="3.42033" ry="4.45425" transform="matrix(-0.205644 0.978627 -0.992832 -0.119521 1266.11 191.618)" fill="#ECECEC"/>
 <ellipse id="Ellipse 125" rx="3.42033" ry="4.45425" transform="matrix(-0.205644 0.978627 -0.992832 -0.119521 1320.47 168.216)" fill="#ECECEC"/>
 <ellipse id="Ellipse 69" cx="931.539" cy="110.822" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
 <ellipse id="Ellipse 71" cx="1043.6" cy="247.285" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
 <ellipse id="Ellipse 73" cx="722.02" cy="110.822" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
-<ellipse id="Ellipse 127" cx="465.719" cy="82.3693" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
-<ellipse id="Ellipse 128" cx="267.277" cy="76.7502" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
+<ellipse id="Ellipse127" cx="465.719" cy="82.3693" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
+<ellipse id="Ellipse128" cx="267.277" cy="76.7502" rx="7.4239" ry="5.6191" fill="#ECECEC"/>
 <ellipse id="Ellipse 66" rx="3.94763" ry="2.98793" transform="matrix(-1 0 0 1 606.832 280.688)" fill="#ECECEC"/>
 <ellipse id="Ellipse 67" cx="909.032" cy="320.958" rx="5.0671" ry="3.83526" fill="#ECECEC"/>
 <ellipse id="Ellipse 75" cx="929.182" cy="189.132" rx="5.0671" ry="3.83526" fill="#ECECEC"/>
@@ -90,9 +107,9 @@ return (
 <ellipse id="Ellipse 92" rx="4.97117" ry="3.95881" transform="matrix(-0.973515 0.228622 -0.379294 -0.925276 368.014 104.4)" fill="#ECECEC"/>
 <ellipse id="Ellipse 93" rx="4.97117" ry="3.95881" transform="matrix(-0.973515 0.228622 -0.379294 -0.925276 419.512 154.782)" fill="#ECECEC"/>
 <ellipse id="Ellipse 136" cx="80.7823" cy="47.9956" rx="3.88871" ry="2.94334" fill="#ECECEC"/>
-<ellipse id="Ellipse 137" cx="151.369" cy="100.708" rx="5.0671" ry="3.83526" fill="#ECECEC"/>
-<ellipse id="Ellipse 138" rx="3.913" ry="3.03314" transform="matrix(0.988006 -0.154414 -0.263191 -0.964744 38.6645 75.3285)" fill="#ECECEC"/>
-<ellipse id="Ellipse 139" rx="5.02266" ry="3.89328" transform="matrix(-0.988006 0.154414 -0.263191 -0.964744 137.254 66.887)" fill="#ECECEC"/>
+<ellipse id="Star137" cx="151.369" cy="100.708" rx="5.0671" ry="3.83526" fill="#ECECEC"/>
+<ellipse id="Star138" rx="3.913" ry="3.03314" transform="matrix(0.988006 -0.154414 -0.263191 -0.964744 38.6645 75.3285)" fill="#ECECEC"/>
+<ellipse id="Star139" rx="5.02266" ry="3.89328" transform="matrix(-0.988006 0.154414 -0.263191 -0.964744 137.254 66.887)" fill="#ECECEC"/>
 <ellipse id="Ellipse 140" rx="4.97117" ry="3.95881" transform="matrix(-0.973515 0.228622 -0.379294 -0.925276 185.765 19.7995)" fill="#ECECEC"/>
 <ellipse id="Ellipse 94" rx="4.97117" ry="3.95881" transform="matrix(-0.973515 0.228622 -0.379294 -0.925276 337.844 30.7995)" fill="#ECECEC"/>
 <ellipse id="Ellipse 95" rx="4.45628" ry="4.5306" transform="matrix(-0.779162 -0.626823 0.814567 -0.580069 50.1626 221.421)" fill="#ECECEC"/>
@@ -379,9 +396,9 @@ return (
 <path id="Ellipse 139_2" d="M128.545 27.7989C128.457 30.9386 135.171 42.0125 122.601 31.4414C119.647 31.3593 118.265 27.0332 115.929 24.0701C119.65 24.6641 119.833 24.6692 122.787 24.7513C125.741 24.8333 128.632 24.6592 128.545 27.7989Z" fill="url(#paint7_linear)"/>
 </g>
 <g id="Group 44">
-<path id="Ellipse 137_3" d="M145.422 29.0656C145.274 34.365 148.088 43.3386 155.392 35.7692C160.528 35.9119 162.078 29.546 166.415 24.7747C163.162 24.6843 160.842 24.6199 155.706 24.4772C150.57 24.3346 145.569 23.7663 145.422 29.0656Z" fill="#D3FDD7"/>
-<path id="Ellipse 138_3" d="M151.165 29.2603C151.078 32.4 143.76 43.0842 156.897 33.2271C159.851 33.3092 161.472 29.0664 163.969 26.2375C160.221 26.6241 160.037 26.619 157.083 26.537C154.129 26.4549 151.253 26.1206 151.165 29.2603Z" fill="url(#paint8_linear)"/>
-<path id="Ellipse 139_3" d="M150.518 28.5062C150.431 31.6459 143.113 42.3301 156.25 32.473C159.204 32.555 160.824 28.3123 163.321 25.4834C159.573 25.87 159.39 25.8649 156.435 25.7828C153.481 25.7008 150.605 25.3665 150.518 28.5062Z" fill="url(#paint9_linear)"/>
+<path id="Star137_3" d="M145.422 29.0656C145.274 34.365 148.088 43.3386 155.392 35.7692C160.528 35.9119 162.078 29.546 166.415 24.7747C163.162 24.6843 160.842 24.6199 155.706 24.4772C150.57 24.3346 145.569 23.7663 145.422 29.0656Z" fill="#D3FDD7"/>
+<path id="Star138_3" d="M151.165 29.2603C151.078 32.4 143.76 43.0842 156.897 33.2271C159.851 33.3092 161.472 29.0664 163.969 26.2375C160.221 26.6241 160.037 26.619 157.083 26.537C154.129 26.4549 151.253 26.1206 151.165 29.2603Z" fill="url(#paint8_linear)"/>
+<path id="Star139_3" d="M150.518 28.5062C150.431 31.6459 143.113 42.3301 156.25 32.473C159.204 32.555 160.824 28.3123 163.321 25.4834C159.573 25.87 159.39 25.8649 156.435 25.7828C153.481 25.7008 150.605 25.3665 150.518 28.5062Z" fill="url(#paint9_linear)"/>
 </g>
 <path id="Ellipse 136_2" d="M149.951 30.7692C152.416 38.6232 145.832 41.1768 139.006 40.9872C132.179 40.7976 126.558 39.2075 128.652 30.1776C128.804 24.7148 132.729 21.015 139.555 21.2046C146.382 21.3942 150.103 25.3064 149.951 30.7692Z" fill="#D3FDD7"/>
 <path id="Ellipse 139_4" d="M150.473 34.3672C150.321 39.8321 145.456 41.1677 138.771 40.982C132.087 40.7963 127.851 39.2079 128.002 33.7431C128.154 28.2782 133.574 37.8296 140.259 38.0153C146.943 38.2009 150.624 28.9023 150.473 34.3672Z" fill="#D3FDD7"/>
@@ -499,9 +516,13 @@ return (
 <rect width="1440" height="855" fill="white"/>
 </clipPath>
 </defs>
-</svg>
+</svg>      
+        </div>
 
-            
+        <div>
+        {/* onClick={changeToGet()} */}
+            <button >Where does Totoro come from?</button>
+            <button >Send Totoro Back</button>
         </div>
 
     </>

@@ -7,6 +7,96 @@
   margin: 15px;
 }
 
+/* LR Clouds section */
+
+@keyframes floatInit {
+  0% {
+    transform: translatex(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+}
+
+#Cloud7,
+#Cloud6,
+#Cloud5,
+#Cloud4,
+#Cloud3,
+#Cloud2,
+#Cloud1 {
+  animation: floatInit 80s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floata {
+  0% {
+    transform: translatex(120%) scalex(1) scaley(1);
+  }
+  50% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+#Cloud7a,
+#Cloud5a,
+#Cloud6a,
+#Cloud3a,
+#Cloud4a,
+#Cloud2a,
+#Cloud1a {
+  animation: floata 300s linear infinite;
+}
+
+@keyframes floatb {
+  0% {
+    transform: translatex(120%) scalex(1) scaley(1);
+  }
+  30% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+
+#Cloud7b,
+#Cloud6b,
+#Cloud5b,
+#Cloud4b,
+#Cloud3b,
+#Cloud2b,
+#Cloud1b {
+  animation: floatb 280s linear infinite;
+}
+
+@keyframes floatc {
+  0% {
+    transform: translatex(120%) scalex(1) scaley(1);
+  }
+  50% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+
+#Cloud7c,
+#Cloud6c,
+#Cloud5c,
+#Cloud4c,
+#Cloud3c,
+#Cloud2c,
+#Cloud1c {
+  animation: floatc 300s linear infinite;
+}
+
+/* Here is the spaceship and beam */
 @keyframes swoop {
   0% {
     transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(0%);
@@ -41,9 +131,15 @@
 #Beam {
   animation: beam 15s ease-in-out infinite;
 }
+#Beam2 {
+  animation: beam 15s ease-in-out backwards;
+}
 
 #spaceship {
   animation: swoop 15s ease-in-out infinite;
+}
+#spaceship2 {
+  animation: swoop 15s ease-in-out backwards;
 }
 
 @keyframes blink1 {
@@ -157,14 +253,16 @@
   animation: blink5 1.9s alternate-reverse infinite;
 }
 
-@keyframes dissapear {
+/* LR totoro disapear */
+
+@keyframes disapear {
   0% {
     fill-opacity: 1;
   }
-  51% {
+  48% {
     fill-opacity: 1;
   }
-  54% {
+  49% {
     fill-opacity: 0;
   }
   55% {
@@ -175,14 +273,14 @@
   }
 }
 
-@keyframes dissapear3 {
+@keyframes disapear3 {
   0% {
     fill: #c4c4c4;
   }
-  51% {
+  48% {
     fill: #c4c4c4;
   }
-  54% {
+  49% {
     fill: none;
   }
   55% {
@@ -192,16 +290,16 @@
     fill: none;
   }
 }
-@keyframes dissapear3a {
+@keyframes disapear3a {
   0% {
     fill: #c4c4c4;
     fill-opacity: "0.55";
   }
-  51% {
+  48% {
     fill: #c4c4c4;
     fill-opacity: "0.55";
   }
-  54% {
+  49% {
     fill: none;
     fill-opacity: none;
   }
@@ -215,16 +313,16 @@
   }
 }
 
-@keyframes dissapear3path {
+@keyframes disapear3path {
   0% {
     fill: #808080;
     fill-opacity: "0.55";
   }
-  51% {
+  48% {
     fill: #808080;
     fill-opacity: "0.55";
   }
-  54% {
+  49% {
     fill: none;
     fill-opacity: none;
   }
@@ -238,18 +336,18 @@
   }
 }
 
-@keyframes dissapear3c {
+@keyframes disapear3c {
   0% {
     fill: #c4c4c4;
     stroke: #3f3d56;
     stroke-opacity: "0.55";
   }
-  51% {
+  48% {
     fill: #c4c4c4;
     stroke: #3f3d56;
     stroke-opacity: "0.55";
   }
-  54% {
+  49% {
     fill: none;
     stroke: none;
     stroke-opacity: "0.55";
@@ -266,32 +364,43 @@
   }
 }
 
-#Ellipse25 path,
-#Ellipse25_2 path,
-#Star10 path,
-#Star5 path,
-#Star6 path,
-#Star4 path,
-#Star7 path,
-#Star8 path,
-#Star9 path {
-  animation: dissapear3c 15s ease-in-out infinite alternate-reverse;
-}
-
-@keyframes dissapear4 {
+@keyframes disapear4 {
   0% {
     stroke: black;
   }
-  51% {
+  48% {
     stroke: black;
   }
-  54% {
+  49% {
     stroke: none;
   }
   55% {
     stroke: none;
   }
   100% {
+    stroke: none;
+  }
+}
+
+@keyframes disapear3strokeFill {
+  0% {
+    fill: #c4c4c4;
+    stroke: #3f3d56;
+  }
+  48% {
+    fill: #c4c4c4;
+    stroke: #3f3d56;
+  }
+  49% {
+    fill: none;
+    stroke: none;
+  }
+  55% {
+    fill: none;
+    stroke: none;
+  }
+  100% {
+    fill: none;
     stroke: none;
   }
 }
@@ -303,7 +412,7 @@
 #Line9,
 #Line10,
 #mouth {
-  animation: dissapear4 15s ease-in-out infinite alternate-reverse;
+  animation: disapear4 15s forwards ease-in-out;
 }
 
 #Rectangle32,
@@ -311,7 +420,7 @@
 #Rectangle25,
 #Rectangle24,
 #Rectangle30 {
-  animation: dissapear3 15s ease-in-out infinite alternate-reverse;
+  animation: disapear3 15s infinite ease-in-out;
 }
 
 #Ellipse27_2,
@@ -321,11 +430,23 @@
 #Ellipse47,
 #Ellipse49,
 #Ellipse50 {
-  animation: dissapear3path 15s ease-in-out infinite alternate-reverse;
+  animation: disapear3path 15s infinite ease-in-out;
 }
 
 #Ellipse23 {
-  animation: dissapear3a 15s ease-in-out infinite alternate-reverse;
+  animation: disapear3a 15s infinite ease-in-out;
+}
+
+#Ellipse25 path,
+#Ellipse25_2 path,
+#Star10 path,
+#Star5 path,
+#Star6 path,
+#Star4 path,
+#Star7 path,
+#Star8 path,
+#Star9 path {
+  animation: disapear3c 15s infinite ease-in-out;
 }
 
 #Ellipse25_2 ellipse,
@@ -359,30 +480,7 @@
 #Ellipse52,
 #Ellipse60,
 #Ellipse61 {
-  animation: dissapear 15s ease-in-out infinite alternate-reverse;
-}
-
-@keyframes dissapear3strokeFill {
-  0% {
-    fill: #c4c4c4;
-    stroke: #3f3d56;
-  }
-  51% {
-    fill: #c4c4c4;
-    stroke: #3f3d56;
-  }
-  54% {
-    fill: none;
-    stroke: none;
-  }
-  55% {
-    fill: none;
-    stroke: none;
-  }
-  100% {
-    fill: none;
-    stroke: none;
-  }
+  animation: disapear 15s infinite ease-in-out;
 }
 
 #Rectangle30_2,
@@ -400,94 +498,84 @@
 #Rectangle38_2,
 #Rectangle37,
 #Rectangle37_2 {
-  animation: dissapear3strokeFill 15s ease-in-out infinite alternate-reverse;
+  animation: disapear3strokeFill 15s infinite ease-in-out;
 }
 
-/* LR Clouds section */
+/* LR Star movement section */
 
-@keyframes floatInit {
+@keyframes twinkle1 {
   0% {
-    transform: translatex(0%);
-    opacity: 1;
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
   }
-  100% {
-    transform: translatex(-100%);
-    opacity: 0;
+  20% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.3;
   }
-}
-
-#Cloud7,
-#Cloud6,
-#Cloud5,
-#Cloud4,
-#Cloud3,
-#Cloud2,
-#Cloud1 {
-  animation: floatInit 80s linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes floata {
-  0% {
-    transform: translatex(100%) scalex(1) scaley(1);
-  }
-  50% {
-    transform: translatex(-100%) scalex(1) scaley(1);
-  }
-  100% {
-    transform: translatex(-100%) scalex(1) scaley(1);
-  }
-}
-#Cloud7a,
-#Cloud5a,
-#Cloud6a,
-#Cloud3a,
-#Cloud4a,
-#Cloud1a,
-#Cloud2a {
-  animation: floata 300s linear infinite;
-}
-
-@keyframes floatb {
-  0% {
-    transform: translatex(100%) scalex(1) scaley(1);
+  21% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.4;
   }
   30% {
-    transform: translatex(100%) scalex(1) scaley(1);
+    transform: scalex(1) scaley(1);
+    opacity: 0.6;
+  }
+  40% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
   }
   100% {
-    transform: translatex(-100%) scalex(1) scaley(1);
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.4;
   }
 }
 
-#Cloud7b,
-#Cloud6b,
-#Cloud5b,
-#Cloud4b,
-#Cloud3b,
-#Cloud2b,
-#Cloud1b {
-  animation: floatb 280s linear infinite;
-}
-
-@keyframes floatc {
+@keyframes twinkle2 {
   0% {
-    transform: translatex(100%) scalex(1) scaley(1);
+    transform: scalex(1) scaley(1);
+    opacity: 0.4;
   }
-  50% {
-    transform: translatex(100%) scalex(1) scaley(1);
+  20% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
+  }
+  21% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.6;
+  }
+  30% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 1;
+  }
+  40% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.8;
   }
   100% {
-    transform: translatex(-100%) scalex(1) scaley(1);
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.4;
   }
 }
 
-#Cloud7c,
-#Cloud6c,
-#Cloud5c,
-#Cloud4c,
-#Cloud3c,
-#Cloud2c,
-#Cloud1c {
-  animation: floatc 300s linear infinite;
+#Ellipse127,
+#Ellipse128 {
+  animation: twinkle1 5s alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Star139 {
+  animation: twinkle2 5s alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Star138,
+#Star63,
+#Star81,
+#Star122,
+#Star123,
+#Star126,
+#Star124 {
+  animation: twinkle2 2s alternate-reverse infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
 }
