@@ -1,0 +1,301 @@
+#dreamerGirl_box {
+  display: flex;
+  justify-content: center;
+  height: 1500px;
+  width: auto;
+  border: solid black 4px;
+  margin: 15px;
+}
+
+/* LR Right foot motion section  */
+@keyframes dangle {
+  1% {
+    transform: rotatey(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotatey(0deg) rotateZ(15deg);
+  }
+  100% {
+    transform: rotatey(0deg) rotateZ(0deg);
+  }
+}
+
+#RightFoot {
+  animation: dangle 2s infinite;
+  transform-box: fill-box;
+}
+
+/* LR Star movement section */
+
+@keyframes twinkle1 {
+  0% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
+  }
+  20% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.3;
+  }
+  21% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.4;
+  }
+  30% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.6;
+  }
+  40% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.4;
+  }
+}
+
+@keyframes twinkle2 {
+  0% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.4;
+  }
+  20% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.2;
+  }
+  21% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.6;
+  }
+  30% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 1;
+  }
+  40% {
+    transform: scalex(1) scaley(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scalex(1.01) scaley(1.01);
+    opacity: 0.4;
+  }
+}
+
+#Star3 {
+  animation: twinkle1 5s alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Star2 {
+  animation: twinkle2 5s alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Star1 {
+  animation: twinkle2 2s alternate-reverse infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+/*LR Plant movement section */
+
+@keyframes upDown3 {
+  from {
+    transform: skewY(5deg) skewX(0deg);
+  }
+  to {
+    transform: skewY(0deg) skewX(5deg);
+  }
+}
+
+#DPlant2,
+#DPlant3,
+#DPlant1 {
+  animation: upDown3 2.7s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Tree1 {
+  animation: upDown3 1.7s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Tree2 {
+  animation: upDown3 1.8s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#Tree3 {
+  animation: upDown3 1.6s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+/* LR Clouds section */
+@keyframes floatInit {
+  0% {
+    transform: translatex(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+}
+
+#Cloud6,
+#Cloud5,
+#Cloud4,
+#Cloud3,
+#Cloud2,
+#Cloud1 {
+  animation: floatInit 80s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floata {
+  0% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  50% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+
+#Cloud5a,
+#Cloud6a,
+#Cloud3a,
+#Cloud4a,
+#Cloud1a,
+#Cloud2a {
+  animation: floata 300s linear infinite;
+}
+
+@keyframes floatb {
+  0% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  30% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+
+#Cloud6b,
+#Cloud5b,
+#Cloud4b,
+#Cloud3b,
+#Cloud2b,
+#Cloud1b {
+  animation: floatb 280s linear infinite;
+}
+
+@keyframes floatc {
+  0% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  50% {
+    transform: translatex(100%) scalex(1) scaley(1);
+  }
+  100% {
+    transform: translatex(-100%) scalex(1) scaley(1);
+  }
+}
+
+#Cloud6c,
+#Cloud5c,
+#Cloud4c,
+#Cloud3c,
+#Cloud2c,
+#Cloud1c {
+  animation: floatc 300s linear infinite;
+}
+
+/* //LR posible spaceship section */
+@keyframes swoop {
+  0% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(0%);
+  }
+  20%,
+  55% {
+    transform: scale(2) rotatex(0deg) translatey(10%) translateX(16%);
+  }
+
+  60%,
+  65% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
+  }
+  100% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
+  }
+}
+
+/* #spaceship {
+  animation: swoop 15s ease-in-out infinite;
+} */
+
+/* @keyframes blink {
+    0% {
+      fill: #fcfdd3;
+    }
+    100% {
+      fill: red;
+    }
+  }
+  @keyframes blinkR {
+    0% {
+      fill: red;
+    }
+    100% {
+      fill: #fcfdd3;
+    }
+  } */
+
+/* @keyframes blink {
+    from {
+      fill: rgb(237, 120, 104);
+     
+    }
+    to {
+    
+      fill: yellow;
+    }
+  } */
+@keyframes blink {
+  from {
+    fill: #63ffee;
+  }
+  to {
+    fill: rgb(28, 164, 160);
+  }
+}
+
+@keyframes blinkR {
+  from {
+    fill: none;
+  }
+  to {
+    fill: none;
+  }
+}
+
+#Ellipse9,
+#Ellipse11,
+#Ellipse5,
+#Ellipse4,
+#Ellipse12 {
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+#Ellipse10,
+#Ellipse8,
+#Ellipse6,
+#Ellipse7,
+#Ellipse3 {
+  animation: blinkR 3s ease-in-out infinite;
+}
