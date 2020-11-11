@@ -1,0 +1,292 @@
+#totoro_box {
+  display: flex;
+  justify-content: center;
+  /* height: 1500px; */
+  /* width: auto; */
+  /* border: solid black 4px; */
+  margin: 15px;
+}
+
+@keyframes swoop {
+  0% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(0%);
+  }
+  20%,
+  55% {
+    transform: scale(2) rotatex(0deg) translatey(10%) translateX(16.7%);
+  }
+
+  60%,
+  65% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
+  }
+  100% {
+    transform: scale(0.01) rotatex(0deg) translatey(0%) translateX(-30%);
+  }
+}
+
+@keyframes beam {
+  0% {
+    fill: none;
+  }
+  50% {
+    fill: url(#paint5_linear);
+  }
+  55%,
+  100% {
+    fill: none;
+  }
+}
+
+#Beam {
+  animation: beam 15s ease-in-out infinite;
+}
+
+#spaceship {
+  animation: swoop 15s ease-in-out infinite;
+}
+
+@keyframes blink1 {
+  0% {
+    fill: #fcfdd3;
+  }
+  16.7% {
+    fill: #fcfdd3;
+  }
+  33.4% {
+    fill: #fcfdd3;
+  }
+  50.1% {
+    fill: red;
+  }
+  66.8% {
+    fill: #fcfdd3;
+  }
+}
+@keyframes blink2 {
+  0% {
+    fill: #fcfdd3;
+  }
+  16.7% {
+    fill: red;
+  }
+  33.4% {
+    fill: #fcfdd3;
+  }
+  50.1% {
+    fill: #fcfdd3;
+  }
+  66.8% {
+    fill: #fcfdd3;
+  }
+}
+@keyframes blink3 {
+  0% {
+    fill: #fcfdd3;
+  }
+  16.7% {
+    fill: #fcfdd3;
+  }
+  33.4% {
+    fill: red;
+  }
+  50.1% {
+    fill: #fcfdd3;
+  }
+  66.8% {
+    fill: #fcfdd3;
+  }
+}
+@keyframes blink4 {
+  0% {
+    fill: #fcfdd3;
+  }
+  16.7% {
+    fill: #fcfdd3;
+  }
+  33.4% {
+    fill: #fcfdd3;
+  }
+  50.1% {
+    fill: #fcfdd3;
+  }
+  66.8% {
+    fill: #fcfdd3;
+  }
+  83.5% {
+    fill: red;
+  }
+}
+@keyframes blink5 {
+  0% {
+    fill: #fcfdd3;
+  }
+  16.7% {
+    fill: #fcfdd3;
+  }
+  33.4% {
+    fill: #fcfdd3;
+  }
+  50.1% {
+    fill: #fcfdd3;
+  }
+  66.8% {
+    fill: #fcfdd3;
+  }
+  83.5% {
+    fill: #fcfdd3;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+#bulb16 {
+  animation: blink1 1.9s alternate-reverse infinite;
+}
+#bulb15 {
+  animation: blink2 1.9s ease-in-out infinite;
+}
+#bulb12 {
+  animation: blink3 1.9s alternate-reverse infinite;
+}
+#bulb5 {
+  animation: blink4 1.9s ease-in-out infinite;
+}
+#bulb17 {
+  animation: blink5 1.9s alternate-reverse infinite;
+}
+
+@keyframes dissapear {
+  0% {
+    fill-opacity: 1;
+  }
+  51% {
+    fill-opacity: 1;
+  }
+  54% {
+    fill-opacity: 0;
+  }
+  55% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
+
+@keyframes dissapear3 {
+  0% {
+    fill: #c4c4c4;
+  }
+  51% {
+    fill: #c4c4c4;
+  }
+  54% {
+    fill: none;
+  }
+  55% {
+    fill: none;
+  }
+  100% {
+    fill: none;
+  }
+}
+@keyframes dissapear3a {
+  0% {
+    fill: #c4c4c4;
+    fill-opacity: "0.5";
+  }
+  51% {
+    fill: #c4c4c4;
+    fill-opacity: "0.5";
+  }
+  54% {
+    fill: none;
+    fill-opacity: none;
+  }
+  55% {
+    fill: none;
+    fill-opacity: none;
+  }
+  100% {
+    fill: none;
+    fill-opacity: none;
+  }
+}
+
+@keyframes dissapear4 {
+  0% {
+    stroke: black;
+  }
+  51% {
+    stroke: black;
+  }
+  54% {
+    stroke: none;
+  }
+  55% {
+    stroke: none;
+  }
+  100% {
+    stroke: none;
+  }
+}
+
+#Line5,
+#Line6,
+#Line7,
+#Line8,
+#Line9,
+#Line10,
+#mouth {
+  animation: dissapear4 15s ease-in-out infinite alternate-reverse;
+}
+#Rectangle30_4,
+#Rectangle31_4,
+#Rectangle32_4,
+#Rectangle32,
+#Rectangle31,
+#Rectangle25,
+#Rectangle24,
+#Rectangle30,
+#Rectangle30_2,
+#Rectangle32_2,
+#Rectangle31_2,
+#Rectangle30_3,
+#Rectangle31_3,
+#Rectangle32_3 {
+  animation: dissapear3 15s ease-in-out infinite alternate-reverse;
+}
+
+/* #Ellipse23,
+#Ellipse20 {
+  animation: dissapear3a 15s ease-in-out infinite alternate-reverse;
+} */
+
+#Ellipse49_4,
+#Ellipse46_3,
+#Ellipse41_3,
+#Ellipse47,
+#Ellipse49_3,
+#Ellipse46_2,
+#Ellipse41_2,
+#Ellipse49_2,
+#Ellipse46,
+#Ellipse41,
+#Ellipse39,
+#Ellipse39,
+#Ellipse38,
+#Ellipse33,
+#Ellipse31,
+#Ellipse32,
+#Ellipse50,
+#Ellipse49,
+#Ellipse19,
+#Ellipse18,
+#Ellipse51,
+#Ellipse52,
+#Ellipse60,
+#Ellipse61 {
+  animation: dissapear 15s ease-in-out infinite alternate-reverse;
+}
