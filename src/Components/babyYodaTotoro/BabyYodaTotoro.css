@@ -129,14 +129,14 @@
 }
 
 #Beam {
-  animation: beam 15s ease-in-out infinite;
+  animation: beam 15s ease-in-out alternate-reverse infinite;
 }
 #Beam2 {
   animation: beam 15s ease-in-out backwards;
 }
 
 #spaceship {
-  animation: swoop 15s ease-in-out infinite;
+  animation: swoop 15s ease-in-out alternate-reverse infinite;
 }
 #spaceship2 {
   animation: swoop 15s ease-in-out backwards;
@@ -412,7 +412,7 @@
 #Line9,
 #Line10,
 #mouth {
-  animation: disapear4 15s forwards ease-in-out;
+  animation: disapear4 15s infinite alternate-reverse ease-in-out;
 }
 
 #Rectangle32,
@@ -420,7 +420,7 @@
 #Rectangle25,
 #Rectangle24,
 #Rectangle30 {
-  animation: disapear3 15s infinite ease-in-out;
+  animation: disapear3 15s infinite alternate-reverse ease-in-out;
 }
 
 #Ellipse27_2,
@@ -430,11 +430,11 @@
 #Ellipse47,
 #Ellipse49,
 #Ellipse50 {
-  animation: disapear3path 15s infinite ease-in-out;
+  animation: disapear3path 15s infinite alternate-reverse ease-in-out;
 }
 
 #Ellipse23 {
-  animation: disapear3a 15s infinite ease-in-out;
+  animation: disapear3a 15s infinite alternate-reverse ease-in-out;
 }
 
 #Ellipse25 path,
@@ -446,7 +446,7 @@
 #Star7 path,
 #Star8 path,
 #Star9 path {
-  animation: disapear3c 15s infinite ease-in-out;
+  animation: disapear3c 15s infinite alternate-reverse ease-in-out;
 }
 
 #Ellipse25_2 ellipse,
@@ -480,7 +480,7 @@
 #Ellipse52,
 #Ellipse60,
 #Ellipse61 {
-  animation: disapear 15s infinite ease-in-out;
+  animation: disapear 15s infinite alternate-reverse ease-in-out;
 }
 
 #Rectangle30_2,
@@ -498,7 +498,7 @@
 #Rectangle38_2,
 #Rectangle37,
 #Rectangle37_2 {
-  animation: disapear3strokeFill 15s infinite ease-in-out;
+  animation: disapear3strokeFill 15s infinite alternate-reverse ease-in-out;
 }
 
 /* LR Star movement section */
